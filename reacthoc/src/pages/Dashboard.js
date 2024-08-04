@@ -1,4 +1,6 @@
 import React from 'react'
+import withAuth from './withAuth'
+import withDarkMode from './withDarkMode'
 
 const Dashboard = () => {
   return (
@@ -7,5 +9,6 @@ const Dashboard = () => {
     </div>
   )
 }
+const AuthDashBoard = withDarkMode( withAuth(Dashboard))
 
-export default Dashboard
+export default AuthDashBoard

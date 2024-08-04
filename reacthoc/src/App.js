@@ -1,11 +1,10 @@
 import React from 'react'
-import withAuth from './pages/withAuth'
-import Dashboard from './pages/Dashboard'
+import AuthDashBoard from './pages/Dashboard'
 const App = () => {
-  const AuthDashBoard = withAuth(Dashboard)
+ 
   return (
     <div>
-      <AuthDashBoard/>
+      <AuthDashBoard />
     </div>
   )
 }
