@@ -5,7 +5,6 @@ const Forms = () => {
     const [amount, setAmount] = useState(0);
     const [name, setName] = useState("");
     const [mobile, setMobile] = useState();
-    const [reset, setReset] = useState("");
 
 
     const depositChange = (e)=>{
@@ -82,9 +81,9 @@ const Forms = () => {
 
             <div className='row mt-3'>
              <div className='col-10'>
-                <button className='btn btn-primary btn-sm col-2 mx-1'
+                <button className='btn btn-danger btn-sm col-2 mx-1'
                 onClick={()=>{
-                    dispatch({type:'default',payload: reset});
+                    dispatch({type:'reset'});
                     }}
                 >Reset</button>                
             </div>
